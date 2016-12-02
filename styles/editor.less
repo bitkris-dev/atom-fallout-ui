@@ -1,0 +1,19 @@
+.theme-atom-blue-jeans-ui {
+    atom-text-editor[mini] {
+        padding-left: @component-padding/2;
+        color: @text-color;
+        border-radius: @component-border-radius;
+        border-bottom: 1px solid @custom-yellow;
+
+        &.is-focused {}
+        &::shadow {
+            .placeholder-text {
+                color: @text-color-subtle;
+            }
+
+            .selection .region {
+                background-color: @background-color-selected;
+            }
+        }
+    }
+}

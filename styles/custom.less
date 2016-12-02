@@ -1,0 +1,197 @@
+.theme-atom-blue-jeans-ui {
+    .badge,
+    .deprecation-cop .deprecation-info:hover,
+    .list-group .selected::before,
+    .list-group li.selected,
+    .list-tree .selected::before,
+    .nav-pills > li.active > a,
+    .nav-pills > li.active > a:focus,
+    .nav-pills > li.active > a:hover,
+    .settings-view .config-menu .nav > li.active > a,
+    .settings-view .keybinding-panel .is-user,
+    .styleguide [data-name="variables"] .is-color.background-color-selected:before,
+    .styleguide [data-name="variables"] .is-color.button-border-color:before,
+    .styleguide [data-name="variables"] .is-color.inset-panel-border-color:before,
+    .styleguide [data-name="variables"] .is-color.tab-background-color-active:before,
+    .styleguide [data-name="variables"] .is-color.tool-panel-border-color:before,
+    .tab-bar .tab.active,
+    atom-text-editor[mini] .selection .region,
+    atom-text-editor[mini]::shadow .selection .region {
+        background-color: @custom-color;
+    }
+
+		.nav-pills > li.active > a,
+    .nav-pills > li.active > a:focus,
+    .nav-pills > li.active > a:hover {color:@custom-yellow !important;}		
+
+    .scrollbars-visible-always atom-text-editor::-webkit-scrollbar-thumb,
+    .scrollbars-visible-always::-webkit-scrollbar-thumb,
+    .tooltip .keystroke,
+    atom-text-editor atom-text-editor-minimap::shadow .minimap-scroll-indicator,
+    atom-text-editor::shadow atom-text-editor-minimap::shadow .minimap-scroll-indicator,
+    html atom-text-editor-minimap::shadow .minimap-scroll-indicator {
+        background: @custom-color;
+    }
+
+    .pigments-sampler .background-color-selected,
+    .pigments-sampler .button-border-color,
+    .pigments-sampler .inset-panel-border-color,
+    .pigments-sampler .tab-background-color-active,
+    .pigments-sampler .tool-panel-border-color {
+        color: @custom-color;
+    }
+
+    .input-select {
+        border: 1px solid transparent;
+    }
+
+    .section.bordered,
+    section.bordered {
+        border-bottom: 1px solid transparent;
+    }
+
+    .projects-tab {
+        display: block;
+        position: relative;
+        background: @custom-color;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        height: @tab-height;
+        line-height: @tab-height;
+        pointer-events: none;
+        z-index: 100;
+        background-color: @custom-yellow;
+        white-space: nowrap;
+        letter-spacing: 0.2em;
+
+        span::after {
+            padding: 0 1rem;
+            content: '🚀 projects';
+        }
+    }
+
+    .tree-view {
+        .project-root > .list-item {
+            font-size: 1.2em;
+        }
+
+<<<<<<< HEAD
+				.list-item {
+					background: @custom-yellow !important;
+					color: #222 !important;
+					text-transform:uppercase;
+					padding:11px 0px;
+					box-shadow:0px 0px 5px 0px black;
+					margin-bottom:10px;
+					letter-spacing:1px;
+
+						& span {font-size:18px;}
+
+						&:hover > span, & span:hover {color:black;}
+						&:hover:before {color:black;-webtransition:none;}
+						& .icon:before {font-size:18px;transform:translateY(-1px)}
+					}
+
+				.list-tree {
+					& .list-item {
+					background: inherit !important;
+					color: inherit !important;
+					text-transform:none;
+					padding:inherit;
+					box-shadow:none;
+					margin-bottom:0px;
+					letter-spacing:0px;
+
+						& span {font-size:inherit;}
+
+						&:hover > span, & span:hover {color:inherit;}
+						&:hover:before {color:inherit;}
+						& .icon:before {font-size:inherit;transform:translateY(0px)}
+					}
+
+					& li:not(.list-nested-item) {line-height:23px;}
+				}
+
+
+=======
+>>>>>>> parent of 2c2d024... Falloutish base color
+        .list-nested-item.directory {
+            .list-item:not(.selected):hover {
+                color: @custom-yellow !important;
+
+                &::after {
+                    content: '';
+                    background: fadein(@custom-color, 0%);
+                    position: absolute;
+                    left: -100%;
+                    right: -10px;
+                    height: @component-line-height;
+                    z-index: -1;
+                }
+            }
+        }
+
+        .list-item.file.entry:not(.selected):hover {
+            cursor: pointer;
+            color: @text-color-selected !important;
+            transition: all 0.1s ease-in-out;
+            margin-left: 20px;
+
+            &::after {
+                content: '';
+                background: fadein(@custom-color, 0%);
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: @component-line-height;
+                z-index: -1;
+                border-left: 3px solid @custom-yellow;
+            }
+        }
+
+        .list-item.file.entry.selected {
+            color: @custom-yellow !important;
+            margin-left: 20px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                z-index: -1;
+                height: @component-line-height;
+                border-left: 3px solid @custom-yellow;
+            }
+        }
+    }
+
+    .tab-bar {
+        cursor: pointer;
+
+        .close-icon {
+            color: @custom-yellow;
+        }
+
+        .tab:not(.active) {
+            .close-icon {
+                display: none;
+            }
+
+            &:hover {
+                color: @text-color-selected;
+                border-bottom: 2px solid @custom-yellow;
+                background: fadein(@custom-color, 0%);
+                transition: all 0.1s ease-in-out;
+
+                .close-icon {
+                    display: block;
+                }
+            }
+        }
+
+        .tab.active {
+            border-bottom: 2px solid @custom-yellow;
+        }
+    }
+}
