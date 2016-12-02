@@ -1,4 +1,4 @@
-.theme-atom-blue-jeans-ui {
+.theme-atom-fallout-ui {
     .badge,
     .deprecation-cop .deprecation-info:hover,
     .list-group .selected::before,
@@ -22,7 +22,7 @@
 
 		.nav-pills > li.active > a,
     .nav-pills > li.active > a:focus,
-    .nav-pills > li.active > a:hover {color:@custom-yellow !important;}		
+    .nav-pills > li.active > a:hover {color:@custom-green !important;}
 
     .scrollbars-visible-always atom-text-editor::-webkit-scrollbar-thumb,
     .scrollbars-visible-always::-webkit-scrollbar-thumb,
@@ -56,18 +56,22 @@
         background: @custom-color;
         color: black;
         font-weight: bold;
-        text-transform: uppercase;
         height: @tab-height;
         line-height: @tab-height;
         pointer-events: none;
         z-index: 100;
-        background-color: @custom-yellow;
+        background-color: @custom-green;
         white-space: nowrap;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.1em;
 
         span::after {
             padding: 0 1rem;
-            content: '🚀 projects';
+            content: '☢ projects';
+						text-transform:uppercase;
+						font-weight:normal;
+						font-size:18px;
+						color: white;
+						text-shadow:1px 1px 1px rgba(0,0,0,0.5);
         }
     }
 
@@ -76,49 +80,14 @@
             font-size: 1.2em;
         }
 
-<<<<<<< HEAD
-				.list-item {
-					background: @custom-yellow !important;
-					color: #222 !important;
-					text-transform:uppercase;
-					padding:11px 0px;
-					box-shadow:0px 0px 5px 0px black;
-					margin-bottom:10px;
-					letter-spacing:1px;
-
-						& span {font-size:18px;}
-
-						&:hover > span, & span:hover {color:black;}
-						&:hover:before {color:black;-webtransition:none;}
-						& .icon:before {font-size:18px;transform:translateY(-1px)}
-					}
-
 				.list-tree {
-					& .list-item {
-					background: inherit !important;
-					color: inherit !important;
-					text-transform:none;
-					padding:inherit;
-					box-shadow:none;
-					margin-bottom:0px;
-					letter-spacing:0px;
-
-						& span {font-size:inherit;}
-
-						&:hover > span, & span:hover {color:inherit;}
-						&:hover:before {color:inherit;}
-						& .icon:before {font-size:inherit;transform:translateY(0px)}
-					}
-
 					& li:not(.list-nested-item) {line-height:23px;}
 				}
 
 
-=======
->>>>>>> parent of 2c2d024... Falloutish base color
         .list-nested-item.directory {
             .list-item:not(.selected):hover {
-                color: @custom-yellow !important;
+                color: @custom-green !important;
 
                 &::after {
                     content: '';
@@ -146,12 +115,12 @@
                 right: 0;
                 height: @component-line-height;
                 z-index: -1;
-                border-left: 3px solid @custom-yellow;
+                border-left: 3px solid @custom-green;
             }
         }
 
         .list-item.file.entry.selected {
-            color: @custom-yellow !important;
+            color: @custom-green !important;
             margin-left: 20px;
 
             &::after {
@@ -161,7 +130,7 @@
                 right: 0;
                 z-index: -1;
                 height: @component-line-height;
-                border-left: 3px solid @custom-yellow;
+                border-left: 3px solid @custom-green;
             }
         }
     }
@@ -170,7 +139,7 @@
         cursor: pointer;
 
         .close-icon {
-            color: @custom-yellow;
+            color: @custom-green;
         }
 
         .tab:not(.active) {
@@ -180,7 +149,7 @@
 
             &:hover {
                 color: @text-color-selected;
-                border-bottom: 2px solid @custom-yellow;
+                border-bottom: 2px solid @custom-green;
                 background: fadein(@custom-color, 0%);
                 transition: all 0.1s ease-in-out;
 
@@ -191,7 +160,7 @@
         }
 
         .tab.active {
-            border-bottom: 2px solid @custom-yellow;
+            border-bottom: 2px solid @custom-green;
         }
     }
 }

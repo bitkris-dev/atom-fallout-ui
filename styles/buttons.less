@@ -1,19 +1,19 @@
-.theme-atom-blue-jeans-ui {
+.theme-atom-fallout-ui {
     .btn {
         color: black;
-        background-color: @custom-yellow;
+        background-color: @custom-green;
         font-weight: bold;
 
 
         &:focus,
         &:hover {
             color: @text-color-highlight;
-						background-color: saturate(darken(@custom-yellow, 25%), 15%);
+						background-color: saturate(@ui-site-color-1, 15%);
         }
 
         &:active {
             color: fade(@text-color-selected, 66%);
-            background-color: darken(@button-background-color, 2%);
+            background-color: darken(@ui-site-color-1, 15%);
         }
 
         &.selected {

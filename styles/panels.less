@@ -1,4 +1,4 @@
-.theme-atom-blue-jeans-ui {
+.theme-atom-fallout-ui {
     .panel-heading {
         border-bottom: 1px solid transparent;
         background-color: @panel-heading-background-color;
@@ -8,7 +8,7 @@
         background-color: fadeout(lighten(@inset-panel-background-color, 4%), 60%);
 
         .panel-heading {
-            background-color: @custom-yellow;
+            background-color: @custom-green;
             color: black;
             font-weight: bold;
         }
@@ -34,7 +34,7 @@
 
             > div > div {
                 background: fadeout(lighten(@inset-panel-background-color, 4%), 60%);
-                border: 1px solid @custom-yellow !important;
+                border: 1px solid @custom-green !important;
             }
         }
     }
@@ -45,10 +45,15 @@
         }
 
         select.form-control {
-            border-color: @custom-yellow;
+            border-color: transparent;
+						cursor:pointer;
 						font-size: 16px;
 						height: 43px;
             background-color: fadeout(lighten(@inset-panel-background-color, 4%), 30%);
+        }
+
+        select.form-control:hover {
+            border-color: @custom-green;
         }
     }
 
@@ -67,12 +72,12 @@
 				box-shadow: 2px 2px 1px 0px black;
         &:hover {
             background: fadeout(lighten(@inset-panel-background-color, 4%), 60%);
-						border-color: @custom-yellow;
+						border-color: @custom-green;
         }
     }
 
     .nav > li > a {
-				text-transform: uppercase;
+				text-transform: lowercase;
 				letter-spacing: 0.5px;
     }
 

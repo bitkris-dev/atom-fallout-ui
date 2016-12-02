@@ -1,4 +1,4 @@
-.theme-atom-blue-jeans-ui {
+.theme-atom-fallout-ui {
     .tree-view-resizer {
         border-right: 1px solid transparent;
 				margin-right:-1px;
@@ -8,8 +8,20 @@
         color: @text-color;
         background-color: @tree-view-background-color;
 
-        .list-item.selected {
-            color: @text-color-selected;
+        .list-item span {
+					color: @custom-green;
+        }
+
+        .list-item span.icon-file-directory:before {
+					color: @ui-site-color-6;
+        }
+
+        .list-item.selected:before {
+            background: @custom-green;
+        }
+
+        .list-item.selected span {
+            color: black; font-weight:bold;
         }
     }
 }
