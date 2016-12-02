@@ -25,3 +25,5 @@ apm install atom-fallout-ui
 This theme is fork of [atom-blue-jeans](https://github.com/mariosbraho/atom-blue-jeans-ui). <br>
 *ZeniMax and its logo are registered trademarks or trademarks of ZeniMax Media Inc. All Rights Reserved. <br>
 This is intended to be only a tribute.*
+<br>
+<p align="center"><a href="https://github.com/bitkris-dev/atom-fallout-ui/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-blue.svg"/></a></p>
