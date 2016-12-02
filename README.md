@@ -22,7 +22,7 @@ apm install atom-fallout-ui
   4. Activate it in  **File -> Settings -> Themes** from the second drop-down menu.
 
 ### Copyrights
-This theme is fork of [atom-blue-jeans](https://github.com/mariosbraho/atom-blue-jeans-ui). <br>
+This theme is fork of [atom-blue-jeans](https://atom.io/themes/atom-blue-jeans-ui). <br>
 *ZeniMax and its logo are registered trademarks or trademarks of ZeniMax Media Inc. All Rights Reserved. <br>
 This is intended to be only a tribute.*
 <br>
