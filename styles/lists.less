@@ -16,13 +16,13 @@
 
 		li[name="Core"]:before {
 			content: '';
-			background: url('atom://atom-fallout-ui/assets/img/fallout-logo.png');
+			background: @background-base-color url('atom://atom-fallout-ui/assets/img/fallout-logo.png');
+			background-repeat: no-repeat;
+	    background-position: center;
+			background-size: 61%;
 	    width: 100%;
 	    height: 61px;
-	    background-size: 70%;
 	    display: block;
-	    background-repeat: no-repeat;
-	    background-position: center;
 		}
 
     .list-tree {
