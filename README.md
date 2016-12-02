@@ -3,9 +3,9 @@ Modern UI with Fallout-ish colors
 
 Atom + Fallout looks like the perfect combination for nerd developers. So I created an Atom dark theme inspired to it! <br>
 Feel free to check my syntax theme, which fits very well with this UI: [bitcoder-syntax](https://atom.io/packages/bitcoder-syntax).
-<br>
+<br><br>
 (Everything has been made smooth through transitions.)
-<br>
+<br><br>
 ![Theme screenshot](https://github.com/bitkris-dev/atom-fallout-ui/blob/master/assets/img/atom-fallout-ui-screenshot.png?raw=true)
 
 ### How to Install
